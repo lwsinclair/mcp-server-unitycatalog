@@ -30,7 +30,7 @@ WORKDIR /app
 
 # Copy installed packages from the uv stage (if any exist in /root/.local)
 # This is typically where user-installed Python packages go when using pip with --user
-COPY --from=uv /root/.loca[l] /root/.local
+#COPY --from=uv /root/.loca[l] /root/.local
 
 # Copy the virtual environment from the uv stage
 # This ensures the application runs with the pre-installed dependencies
